@@ -1,20 +1,11 @@
-import React from 'react'
+import React from "react";
 
-import {
-  BrowserRouter as Router,
-  Routes,
-  Route,
-  Link
-} from 'react-router-dom';
-import { Container, Navbar, Nav } from 'react-bootstrap';
-import "bootstrap/dist/css/bootstrap.min.css"; 
-
+import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
+import { Container, Navbar, Nav } from "react-bootstrap";
+import "bootstrap/dist/css/bootstrap.min.css";
 
 import WeatherForecast from "./components/WeatherForecast.jsx";
 import BudgetTracker from "./components/BudgetTracker.jsx";
-
-
-
 
 const App = () => {
   return (
@@ -26,10 +17,10 @@ const App = () => {
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="mr-auto">
               <Nav.Link as={Link} to="/weather-forecast">
-                Weather Forecast
+                Weather Forecast 1
               </Nav.Link>
               <Nav.Link as={Link} to="/budget-tracker">
-                Budget Tracker
+                Budget Tracker 2
               </Nav.Link>
             </Nav>
           </Navbar.Collapse>
@@ -41,6 +32,6 @@ const App = () => {
       </Container>
     </Router>
   );
-}
+};
 
-export default App
+export default App;
